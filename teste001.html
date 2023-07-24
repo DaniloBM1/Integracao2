@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Controle de Armários</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Sistema de Controle de Armários</h1>
+  <div class="status-container">
+    <h2>Status dos Armários</h2>
+    <p>Total de armários: <span id="total-armarios"></span></p>
+    <p>Armários disponíveis: <span id="armarios-disponiveis"></span></p>
+    <p>Armários indisponíveis: <span id="armarios-indisponiveis"></span></p>
+  </div>
+  <div class="input-container">
+    <h2>Marcar Armário</h2>
+    <label for="matricula">Número de Matrícula:</label>
+    <input type="text" id="matricula">
+    <label for="armario">Armário:</label>
+    <select id="armario">
+      <option value="" disabled selected>Selecione o Armário</option>
+      <!-- Opções dos armários geradas dinamicamente com JavaScript -->
+    </select>
+    <button id="btn-marcar" onclick="marcarArmario()">Marcar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
