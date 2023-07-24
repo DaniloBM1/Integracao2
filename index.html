@@ -8,25 +8,15 @@
 </head>
 <body>
   <h1>Sistema de Controle de Armários</h1>
-  <div class="status-container">
-    <h2>Status dos Armários</h2>
-    <p>Total de armários: <span id="total-armarios"></span></p>
-    <p>Armários disponíveis: <span id="armarios-disponiveis"></span></p>
-    <p>Armários indisponíveis: <span id="armarios-indisponiveis"></span></p>
-  </div>
   <div class="input-container">
-    <h2>Marcar Armário</h2>
     <label for="matricula">Número de Matrícula:</label>
     <input type="text" id="matricula">
-    <label for="armario">Armário:</label>
-    <select id="armario">
-      <option value="" disabled selected>Selecione o Armário</option>
-      <!-- Opções dos armários geradas dinamicamente com JavaScript -->
-    </select>
-    <button id="btn-marcar" onclick="marcarArmario()">Marcar</button>
+    <button id="btn-acessar" onclick="validarMatricula()">Acessar</button>
+  </div>
+  <div class="status-container" id="status-container">
+    <!-- As informações dos armários serão exibidas aqui após a validação da matrícula -->
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
