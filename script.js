@@ -71,25 +71,4 @@ function criarBotaoMarcacao(armario, status) {
         marcarArmarioDisponivel(armario);
       }
     });
-  }
-
-  return botao;
-}
-
-// Função para marcar um armário como indisponível
-function marcarArmarioIndisponivel(armario) {
-  if (armariosDisponiveis.includes(armario)) {
-    armariosDisponiveis = armariosDisponiveis.filter((num) => num !== armario);
-    armariosIndisponiveis.push(armario);
-    exibirInformacoesArmarios(); // Atualizar as informações após a alteração
-  }
-}
-
-// Função para marcar um armário como disponível
-function marcarArmarioDisponivel(armario) {
-  if (armariosIndisponiveis.includes(armario)) {
-    armariosIndisponiveis = armariosIndisponiveis.filter((num) => num !== armario);
-    armariosDisponiveis.push(armario);
-    exibirInformacoesArmarios(); // Atualizar as informações após a alteração
-  }
-}
+ 
