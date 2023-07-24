@@ -1,23 +1,26 @@
-// Envolver o código em um evento DOMContentLoaded
-document.addEventListener('DOMContentLoaded', function() {
-  // Seu código JavaScript vai aqui dentro
-  // Números de matrículas autorizadas e seus respectivos nomes
-  const alunos = {
-    "297684550674": "João da Silva",
-    "212210605005": "Maria Souza",
-    "238946972429": "Pedro Almeida"
-  };
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Controle de Armários</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Sistema de Controle de Armários</h1>
+  <div class="input-container">
+    <label for="matricula">Número de Matrícula:</label>
+    <input type="text" id="matricula">
+    <button id="btn-acessar">Acessar</button>
+  </div>
+  <div class="status-container" id="status-container">
+    <!-- As informações dos armários e o sistema de marcação serão exibidos aqui após a validação da matrícula -->
+  </div>
 
-  // Variável para armazenar os números dos armários disponíveis e indisponíveis
-  let armariosDisponiveis = [1, 2, 5, 10, 15];
-  let armariosIndisponiveis = [3, 4, 6, 8, 12];
+  <script src="script.js"></script>
+</body>
+</html>
 
-  // Variável para armazenar o número de matrícula selecionado para marcar disponível para indisponível
-  let matriculaSelecionada;
-
-  // Restante do código permanece o mesmo...
-  // ...
-});
 
 
 <!DOCTYPE html>
