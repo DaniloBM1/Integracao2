@@ -1,5 +1,62 @@
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container label,
+.input-container input {
+  margin-right: 10px;
+}
+
+.input-container button {
+  cursor: pointer;
+}
+
+.status-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sistema-marcacao {
+  margin-top: 20px;
+}
+
+.sistema-marcacao button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.disponivel {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.indisponivel {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
 }
